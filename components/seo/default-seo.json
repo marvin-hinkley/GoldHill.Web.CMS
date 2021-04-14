@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_seo_default_seos",
+  "info": {
+    "name": "DefaultSEO",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "MetaTitle": {
+      "type": "string"
+    },
+    "MetaDescription": {
+      "type": "string"
+    }
+  }
+}

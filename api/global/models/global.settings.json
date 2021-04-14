@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "globals",
   "info": {
-    "name": "Global"
+    "name": "Global",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,11 @@
   "attributes": {
     "SiteName": {
       "type": "string"
+    },
+    "DefaultSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.default-seo"
     }
   }
 }
