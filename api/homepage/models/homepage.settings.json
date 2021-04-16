@@ -11,8 +11,14 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Header": {
-      "type": "string"
+    "Components": {
+      "type": "dynamiczone",
+      "components": [
+        "site-components.slider",
+        "site-components.quick-links",
+        "site-components.hero",
+        "site-components.alerts"
+      ]
     }
   }
 }

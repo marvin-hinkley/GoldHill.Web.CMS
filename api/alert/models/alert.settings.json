@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alerts",
+  "info": {
+    "name": "Alert"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "Severity": {
+      "type": "enumeration",
+      "enum": [
+        "Information",
+        "Warning",
+        "Danger"
+      ]
+    }
+  }
+}

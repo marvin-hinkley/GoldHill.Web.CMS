@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_site_components_sliders",
+  "info": {
+    "name": "Slider",
+    "icon": "caret-square-right"
+  },
+  "options": {},
+  "attributes": {
+    "Slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "site-components.slider-slide"
+    }
+  }
+}

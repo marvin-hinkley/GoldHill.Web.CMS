@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_site_components_links",
+  "info": {
+    "name": "Link",
+    "icon": "hand-point-up"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "NewTab": {
+      "type": "boolean"
+    }
+  }
+}

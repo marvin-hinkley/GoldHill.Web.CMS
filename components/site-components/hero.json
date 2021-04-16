@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_site_components_heroes",
+  "info": {
+    "name": "Hero",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "SubHeading": {
+      "type": "string"
+    }
+  }
+}

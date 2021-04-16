@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_site_components_quick_links",
+  "info": {
+    "name": "Quick Links",
+    "icon": "hand-pointer"
+  },
+  "options": {},
+  "attributes": {
+    "Links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "site-components.link"
+    }
+  }
+}

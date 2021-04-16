@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_site_components_alerts",
+  "info": {
+    "name": "Alerts",
+    "icon": "broadcast-tower"
+  },
+  "options": {},
+  "attributes": {
+    "alerts": {
+      "collection": "alert"
+    }
+  }
+}
