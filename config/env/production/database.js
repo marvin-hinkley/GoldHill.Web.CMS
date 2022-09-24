@@ -1,14 +1,19 @@
 const fs = require('fs');
+const parse = require("pg-connection-string").parse;
+
+const { host, port, database, user, password } = parse(
+  process.env.DATABASE_URL
+);
 
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: env('DATABASE_HOST'),
-      port: env.int('DATABASE_PORT'),
-      database: env('DATABASE_NAME'),
-      user: env('DATABASE_USERNAME'),
-      password: env('DATABASE_PASSWORD'),
+      host: host,
+      port: port,
+      database: database,
+      user: user,
+      password: password,
       ssl: {
         ca: fs.readFileSync(`${__dirname}/do-ca-certificate.crt`).toString(),
       },
