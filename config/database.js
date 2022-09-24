@@ -7,7 +7,9 @@ module.exports = ({ env }) => ({
       database: env('DATABASE_NAME', 'strapi'),
       user: env('DATABASE_USERNAME', 'strapi'),
       password: env('DATABASE_PASSWORD', 'password'),
-      ssl: env.bool('DATABASE_SSL', true),
+      ssl: {
+        ca: fs.readFileSync(`${__dirname}/do-ca-certificate.crt`).toString(),
+      },
     },
   },
 });
