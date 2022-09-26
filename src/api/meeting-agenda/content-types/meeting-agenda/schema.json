@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meeting_agendas",
+  "info": {
+    "singularName": "meeting-agenda",
+    "pluralName": "meeting-agendas",
+    "displayName": "Meeting Agenda",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "datetime"
+    },
+    "Agenda": {
+      "type": "richtext",
+      "required": true
+    },
+    "Attachments": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "MeetingType": {
+      "type": "enumeration",
+      "enum": [
+        "City Council",
+        "Parks Committee",
+        "Planning Committee"
+      ],
+      "required": true,
+      "default": "City Council"
+    }
+  }
+}
