@@ -4,7 +4,8 @@
   "info": {
     "singularName": "alert",
     "pluralName": "alerts",
-    "displayName": "Alert"
+    "displayName": "Alert",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,12 +23,12 @@
     "Severity": {
       "type": "enumeration",
       "enum": [
-        "Info",
+        "Information",
         "Warning",
         "Danger"
       ],
       "required": true,
-      "default": "Info"
+      "default": "Information"
     }
   }
 }
