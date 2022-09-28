@@ -16,7 +16,7 @@ const dispatchGithub = async () => {
   try {
       const dispatchResult = await axios.post(
         `${process.env.GITHUB_GATSBY_REPO_URL}/dispatches`,
-        { event_type: event },
+        { event_type: "created" },
         {
           Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
           Accept: 'application/vnd.github.v3+json',
