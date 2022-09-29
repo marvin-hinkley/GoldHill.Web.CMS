@@ -18,9 +18,11 @@ const dispatchGithub = async () => {
         `${process.env.GITHUB_GATSBY_REPO_URL}/dispatches`,
         { event_type: "created" },
         {
-          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-          Accept: 'application/vnd.github.v3+json',
-          "Content-Type": "application/json",
+          headers: {
+            Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+            Accept: 'application/vnd.github.v3+json',
+            "Content-Type": "application/json",
+          }
         }
       );
 
