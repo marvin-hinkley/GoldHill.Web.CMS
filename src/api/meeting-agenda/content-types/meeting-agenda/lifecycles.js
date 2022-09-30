@@ -14,7 +14,7 @@ module.exports = {
 
 const dispatchGithub = async () => {
   try {
-      const dispatchResult = await axios.post(
+      await axios.post(
         `${process.env.GITHUB_GATSBY_REPO_URL}/dispatches`,
         { event_type: "created" },
         {
@@ -25,8 +25,6 @@ const dispatchGithub = async () => {
           }
         }
       );
-
-      console.log('dispatched build trigger', dispatchResult);
     } catch (error) {
       console.log('problem dispatching build trigger', error);
     }
